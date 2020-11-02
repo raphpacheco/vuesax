@@ -1,7 +1,7 @@
 <template>
   <vs-row
-    vs-type="flex"
     :vs-justify="description ? 'space-between' : 'center'"
+    vs-type="flex"
     vs-w="12">
     <vs-col
       v-if="description"
@@ -11,8 +11,8 @@
       vs-align="center"
       vs-lg="6"
       vs-sm="12"
-      vs-xs="12" 
-      >
+      vs-xs="12"
+    >
       <div>
         <span
           style="margin-right:5px"
@@ -39,11 +39,11 @@
       </div>
     </vs-col>
     <vs-col
+      :vs-lg="description ? 6 : 12"
       class="vs-pagination--mb"
       vs-type="flex"
       vs-justify="flex-end"
       vs-align="center"
-      vs-lg="6"
       vs-sm="12"
       vs-xs="12" >
       <div
